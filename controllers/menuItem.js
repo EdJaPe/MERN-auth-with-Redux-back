@@ -4,7 +4,8 @@ exports.createMenuItem = async ( req,res ) => {
   console.log(req.body.body.text)
   try{
     const menuObject = await MenuItem.create({
-      itemName: req.body
+      itemName: req.body.body.text,
+      
     })
     console.log(menuObject)
     res.status(200).json({ success: true })
