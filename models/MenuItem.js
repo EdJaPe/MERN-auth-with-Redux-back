@@ -7,7 +7,7 @@ const MenuItemSchema = new mongoose.Schema({
     category_name: String,
     sub_cat: String,
     description: String,
-    price: Number
+    price: String
     
     
 }, {
